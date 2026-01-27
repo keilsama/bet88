@@ -1,0 +1,95 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Menu điều hướng */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* Bố cục chính */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e2e2e2;
+}
+
+/* Phần giới thiệu CLB */
+.clb-header {
+    text-align: center;
+}
+
+.clb-intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.summary {
+    font-style: italic;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #333;
+}
+
+/* Các bài viết hoạt động */
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.post h3 {
+    color: #2c3e50;
+}
+
+/* Chân trang */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}

@@ -1,0 +1,173 @@
+/* Thiết lập chung */
+/* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+} */
+/* Tìm và sửa lại phần body như sau */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+
+    /* Ảnh nền giữ nguyên */
+    background-image: url('file:///C:/python/HTML/bet88/nha-cai-bet88-duoc-sang-lap-boi-nhom-chuyen-gia-cong-nghe-chau-a-1.webp'); /* Nhớ check lại tên file ảnh của bạn */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* --- [QUAN TRỌNG] ĐOẠN MÃ ĐẨY FOOTER --- */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Bắt buộc trang web cao ít nhất bằng 100% màn hình */
+}
+
+/* Tìm và sửa lại phần footer như sau */
+
+/* Menu điều hướng */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* Bố cục chính */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    
+    /* Sử dụng màu đen (0,0,0) với độ trong suốt 0.6 (60%) để tạo màu xám mờ */
+    background: rgba(0, 0, 0, 0.6); 
+    
+    /* Bo góc để trông mềm mại hơn */
+    border-radius: 15px; 
+    
+    /* Hiệu ứng làm mờ lớp ảnh phía sau (chỉ hoạt động trên các trình duyệt hiện đại) */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+    /* Vì nền giờ là màu tối (xám đen), ta cần đổi chữ sang màu trắng để dễ đọc */
+    color: #ffffff; 
+    
+    /* Đổ bóng nhẹ để khối nội dung nổi lên khỏi nền */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.main-header {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    
+    /* Nền xám mờ ban đầu */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    
+    /* Tạo viền kiểu pixel */
+    border: 4px solid #fff;
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.5); 
+
+    /* Gọi hoạt ảnh: nẩy và đổi màu */
+    animation: pixelJump 2s infinite ease-in-out, changeColor 5s infinite linear;
+}
+
+/* Hoạt ảnh nẩy lên nẩy xuống */
+@keyframes pixelJump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Nẩy lên 15 pixel */
+    }
+}
+
+/* Hoạt ảnh đổi màu nền mờ */
+@keyframes changeColor {
+    0%   { background: rgba(255, 0, 0, 0.5); }   /* Đỏ mờ */
+    25%  { background: rgba(0, 255, 0, 0.5); }   /* Xanh lá mờ */
+    50%  { background: rgba(0, 0, 255, 0.5); }   /* Xanh dương mờ */
+    75%  { background: rgba(255, 255, 0, 0.5); } /* Vàng mờ */
+    100% { background: rgba(255, 0, 0, 0.5); }   /* Quay lại đỏ */
+}
+/* Phần giới thiệu CLB */
+.clb-header {
+    text-align: center;
+}
+
+.clb-intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.summary {
+    font-style: italic;
+    color: #555;
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #333;
+}
+
+/* Các bài viết hoạt động */
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.post h3 {
+    color: #2c3e50;
+}
+
+/* Chân trang */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    
+    /* --- [QUAN TRỌNG] Tự động đẩy footer xuống dưới cùng --- */
+    margin-top: auto; 
+    width: 100%;
+}
+.btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.container h1, .container h2, .container h3, .summary {
+    color: #ffffff !important;
+}
+
+/* Chỉnh lại phần tóm tắt để nó không bị quá tối */
+.summary {
+    border-left: 5px solid #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}

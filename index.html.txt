@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Giới Thiệu CLB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="clb1.html">Câu Lạc Bộ 1</a>
+        <a href="clb2.html">Câu Lạc Bộ 2</a>
+    </nav>
+
+    <header class="main-header">
+        <h1>Chào mừng đến với Cổng thông tin CLB</h1>
+        <p>Khám phá các hoạt động ngoại khóa sôi nổi của chúng tôi.</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Danh sách các Câu Lạc Bộ</h2>
+            <p>Vui lòng chọn một câu lạc bộ trên thanh menu hoặc bên dưới để xem chi tiết.</p>
+            
+            <div class="clb-links">
+                <a href="clb1.html" class="btn">Xem CLB Số 1</a>
+                <a href="clb2.html" class="btn">Xem CLB Số 2</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Website CLB Trường ABC</p>
+    </footer>
+
+</body>
+</html>
