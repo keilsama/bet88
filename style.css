@@ -16,7 +16,7 @@ body {
     color: #333;
 
     /* Ảnh nền giữ nguyên */
-    background-image: url('nha-cai-bet88-duoc-sang-lap-boi-nhom-chuyen-gia-cong-nghe-chau-a-1.jpg'); /* Nhớ check lại tên file ảnh của bạn */
+    background-image: url('ncai.jpg'); /* Nhớ check lại tên file ảnh của bạn */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -172,3 +172,4 @@ footer {
     background: rgba(255, 255, 255, 0.1);
 
 }
+
